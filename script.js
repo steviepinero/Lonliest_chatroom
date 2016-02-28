@@ -4,7 +4,7 @@ $(document).on('ready', function() {
     $('#new-message-button').click(function(event) {
       var message = $('#new-message-body').val();
       console.log(message);
-      
+
       $('<li class="message"><a class="delete" href="#">Delete</a><h3 class="author">Me</h3><p class="message-body">' + message +'</p><span class="timestamp">01:12</span></li>').appendTo('#conversation');
     });
 });
@@ -29,4 +29,4 @@ $.get(api_url, function(data) {
     });
   });
 });
-});
+});//document ready close
